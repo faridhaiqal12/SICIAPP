@@ -1,3 +1,5 @@
+import 'package:belajar_bebas/chat.dart';
+import 'package:belajar_bebas/home.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -11,23 +13,7 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "SICIAPP",
-            style: TextStyle(
-                color: Colors.pink.shade400, fontWeight: FontWeight.w700),
-          ),
-          actions: [
-            IconButton(
-                onPressed: () {},
-                icon: CircleAvatar(
-                  backgroundColor: Colors.pink,
-                  radius: 15,
-                )),
-          ],
-        ),
-      ),
+      home: Home(),
     );
   }
 }
